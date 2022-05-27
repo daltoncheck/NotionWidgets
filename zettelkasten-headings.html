@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width">
     <title>Zettelkasten Headings</title>
     <style>
+        body, html {
+            padding: 0px;
+            margin: 0px;
+        }
         .button-container {
             display: flex;
             justify-content: left;
+            padding: 0px;
+            margin: 0px;
+            gap: 10px;
         }
         .button {
             background-color: #333;
@@ -18,9 +25,10 @@
             font-weight: 600;
             text-decoration: none;
             color: white;
-            margin-left: 10px;
-            margin-right: 10px;
             transition: transform 250ms ease, box-shadow 250ms ease;
+        }
+        .button-container:first-child{
+            margin-left: 0px;
         }
         .button:hover {
             transform: scale(1.05);
